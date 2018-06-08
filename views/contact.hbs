@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Anders Lund</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Anders Lund</title>
 
-    <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  </head>
-  <body>
-    <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link" href="/" style="color:white">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="portfolio" style="color:white">Portfolio</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/images/resume.pdf" style="color:white" target="_blank">Resume</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Contact</a>
-  </li>
-</ul>
+</head>
 
-<div class="container contactInfo">
-  <div class="row">
-    <div class="col-sm-2">
-      <a href="https://www.linkedin.com/in/andersdlund/" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="linkedin"></a>
-  </div>
-  <div class="col-sm-2">
-    <a href="https://github.com/AndersDLund" target="_blank"><img src="images/github.png" alt="github" class="github"></a>
-  </div>
-  <div class="col-sm-2">
-    <a href="https://www.youtube.com/channel/UC-1GLnz6kUS5mV5ce-cGjZA " target="_blank"><img src="images/youtube1.png" alt="youtube" class="youtube"></a>
-  </div>
-  <div class="col-sm-2">
-    <a href="https://twitter.com/AndersDLund" target="_blank"><img src="images/twitter.png" alt="twitter" class="twitter"></a>
-  </div>
-  <div class="col-sm-2">
-    <a href="https://www.facebook.com/anders.lund.779" target="_blank"><img src="images/fb.png" alt="fb" class="fb"></a>
+<body>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" href="/" style="color:white">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="portfolio" style="color:white">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/images/resume.pdf" style="color:white" target="_blank">Resume</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Contact</a>
+    </li>
+  </ul>
+<p class="emailSuccess">{{msg}}</p>
+  <div class="container contactInfo animated bounceInLeft">
+    <div class="row">
+      <div class="col-sm-2">
+        <a href="https://www.linkedin.com/in/andersdlund/" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="linkedin"></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://github.com/AndersDLund" target="_blank"><img src="images/github.png" alt="github" class="github"></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://www.youtube.com/channel/UC-1GLnz6kUS5mV5ce-cGjZA " target="_blank"><img src="images/youtube1.png" alt="youtube" class="youtube"></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://twitter.com/AndersDLund" target="_blank"><img src="images/twitter.png" alt="twitter" class="twitter"></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://www.facebook.com/anders.lund.779" target="_blank"><img src="images/fb.png" alt="fb" class="fb"></a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container emailPhone">
-  <div class="row">
-    <div class="col-sm-6 email">
-       AndersDouglasLund@gmail.com
+  <form method="post" action="contact" class="animated bounceInLeft">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputName"></label>
+        <input name="name" type="text" class="form-control" id="inputName" placeholder="Your Name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="email"></label>
+        <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+      </div>
     </div>
-    <div class="col-sm-6 phone">
-      (707) 318-7934
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="textArea"></label>
+        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
+      </div>
     </div>
+    <div class="form-row">
+      <div class="form-group col-md-2">
+        <button type="submit" class="btn btn-primary mb-2">Send</button>
+      </div>
+    </div>
+  </form>
 
-  </div>
-</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-  </body>
 </html>
