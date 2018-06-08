@@ -30,7 +30,7 @@
     </li>
   </ul>
 <p class="emailSuccess">{{msg}}</p>
-  <div class="container contactInfo animated bounceInLeft">
+  <div class="container contactInfo" data-aos="fade-left" data-aos-duration="2000">
     <div class="row">
       <div class="col-sm-2">
         <a href="https://www.linkedin.com/in/andersdlund/" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="linkedin"></a>
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-  <form method="post" action="contact" class="animated bounceInLeft">
+  <form method="post" action="contact" data-aos="fade-right" data-aos-duration="2000" class="form">
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputName"></label>
@@ -74,6 +74,17 @@
     </div>
   </form>
 
+  <div class="footer">
+    <div class="email">
+      <p>AndersDouglasLund@gmail.com</p>
+    </div>
+    <div class="phone">
+      <p>(707) 318-7934</p>
+    </div>
+
+</div>
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 </body>
